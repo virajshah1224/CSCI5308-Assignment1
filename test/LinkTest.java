@@ -25,8 +25,9 @@ class LinkTest {
   @Test
   void getLength() {
 
+    Link l = new Link(c1,c2,4);
+    assertEquals(4,l.getLength());
   }
-
   /* getAdj() returns city1 if c is city2 */
   @Test
   void getAdj_city1() {
