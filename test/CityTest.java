@@ -59,4 +59,31 @@ public class CityTest {
         assertEquals("Hello",c.toString());
     }
 
+    @Test
+    public void testCompareGreater()
+    {
+        City c = new City("Greater");
+        City c1 = new City(4);
+        City c2 = new City(3);
+        assertTrue(c.compare(c1,c2) > 0,"False");
+    }
+
+    @Test
+    public void testCompareSmaller()
+    {
+        City c = new City("Smaller");
+        City c1 = new City(2);
+        City c2 = new City(3);
+        assertTrue(c.compare(c1,c2) < 0,"False");
+    }
+
+    @Test
+    public void testCompareEqual()
+    {
+        City c = new City("Equal");
+        City c1 = new City(3);
+        City c2 = new City(3);
+        assertTrue(c.compare(c1,c2) == 0,"False");
+    }
+
 }
