@@ -113,4 +113,35 @@ class LinkTest {
 
     assertEquals("Halifax 3 Halifax",l.cityNameSorted());
   }
+
+  @Test
+  public void compareToCityName_same() {
+
+    City city1 = new City("Halifax");
+    City city2 = new City("Halifax");
+
+    Link l = new Link(city1,city2,3);
+    Link l1 = new Link(city1,city2,2);
+    assertEquals(0,l.compareTo(l1));
+  }
+
+  @Test
+  public void compareToCityName_greater() {
+
+    City city3 = new City("Toronto");
+    City city2 = new City("Halifax");
+    City city1 = new City("Montreal");
+    Link l = new Link(city1,city3,3);
+    Link l1 = new Link(city2,city2,3);
+    assertEquals(1,l.compareTo(l1));
+  }
+  @Test
+  public void compareToCityName_smaller() {
+
+    City city1 = new City("Halifax");
+    City city2 = new City("Toronto");
+    Link l = new Link(city1,city2,3);
+    Link l1 = new Link(city1,city2,3);
+    assertEquals(-1,l.compareTo(l1));
+  }
 }
