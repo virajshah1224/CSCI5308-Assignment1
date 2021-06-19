@@ -47,7 +47,7 @@ public class Link implements Comparable<Link> {
    */
   public City getAdj(City c) {
 
-    return c == city1 ? city2 : city2;
+    return c == city1 ? city2 : city1;
   }
 
   /* return true if this link is on a shortest path and false otherwise */
@@ -62,16 +62,28 @@ public class Link implements Comparable<Link> {
     used = u;
   }
 
-  @Override
-  public int compareTo(Link o) {
-    return 0;
-  }
 
   /* return a string representation of the Link
    * e.g. "City1 3 City2"
    * The city names should be in sorted order, e.g. Halifax comes before Toronto
    */
+  public String cityNameSorted()
+  {
+    City c1 = city1;
+    City c2 = city2;
 
+    if( c1.name.compareTo(c2.name) < 0)
+    {
+      return  c1.name + " " + length + " " + c2.name ;
+    }
+    else if(c1.name.compareTo(c2.name) > 0)
+    {
+      return c2.name + " " + length + " " + c1.name ;
+    }
+    else {
+      return  c1.name + " " + length + " " + c2.name ;
+    }
+  }
 
   /* compare this Link to Link l
    * returns 0 if both links have the same city1 and city2
@@ -79,4 +91,17 @@ public class Link implements Comparable<Link> {
    * else return a positive int
    */
 
+  @Override
+  public int compareTo(Link o)
+  {
+    if(this.city1.compareTo(o.city2) >0)
+    {
+      return 1;
+    }
+    else if(this.city1.compareTo(o.city2) < 0)
+    {
+      return -1;
+    }
+    return 0;
+  }
 }
