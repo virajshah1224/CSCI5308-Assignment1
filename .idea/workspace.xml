@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="827725b3-2cb3-4910-9256-ec4d8345ddd9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/LinkTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/LinkTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/CityTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/CityTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +52,7 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
-  <component name="RunManager" selected="JUnit.LinkTest.isUsed_false">
+  <component name="RunManager" selected="JUnit.CityTest.constructorTest">
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -75,21 +74,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="CityTest.constructorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ronnie" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="CityTest" />
+      <option name="METHOD_NAME" value="constructorTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="LinkTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ronnie" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="LinkTest" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LinkTest.getLength" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ronnie" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="LinkTest" />
-      <option name="METHOD_NAME" value="getLength" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -116,11 +115,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CityTest.constructorTest" />
         <item itemvalue="JUnit.LinkTest.isUsed_false" />
         <item itemvalue="JUnit.LinkTest.setUsed_false" />
         <item itemvalue="JUnit.CityComparatorTest.compare_xSmaller" />
         <item itemvalue="JUnit.LinkTest" />
-        <item itemvalue="JUnit.LinkTest.getLength" />
       </list>
     </recent_temporary>
   </component>

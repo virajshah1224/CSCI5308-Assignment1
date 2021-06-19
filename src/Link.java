@@ -62,6 +62,11 @@ public class Link implements Comparable<Link> {
     used = u;
   }
 
+  @Override
+  public int compareTo(Link o) {
+    return 0;
+  }
+
   /* return a string representation of the Link
    * e.g. "City1 3 City2"
    * The city names should be in sorted order, e.g. Halifax comes before Toronto
