@@ -52,4 +52,11 @@ public class CityTest {
         assertTrue(c1.compareTo(c2) == 0,"distance is not expected");
     }
 
+    @Test
+    public void testToString()
+    {
+        City c = new City("Hello");
+        assertEquals("Hello",c.toString());
+    }
+
 }
