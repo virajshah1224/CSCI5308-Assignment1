@@ -27,4 +27,29 @@ public class CityTest {
         assertTrue(c.cities.size()>0,"False");
     }
 
+    @Test
+    public void testCompareToSmaller()
+    {
+        City c1 = new City("Halifax");
+        City c2 = new City("Toronto");
+
+        assertTrue(c1.compareTo(c2) < 0,"distance is not expected");
+    }
+    @Test
+    public void testCompareToGreater()
+    {
+        City c1 = new City("Toronto");
+        City c2 = new City("Halifax");
+
+        assertTrue(c1.compareTo(c2) > 0,"distance is not expected");
+    }
+    @Test
+    public void testCompareToEqual()
+    {
+        City c1 = new City("Halifax");
+        City c2 = new City("Halifax");
+
+        assertTrue(c1.compareTo(c2) == 0,"distance is not expected");
+    }
+
 }
