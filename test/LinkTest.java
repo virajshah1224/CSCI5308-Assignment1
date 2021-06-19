@@ -9,6 +9,18 @@ class LinkTest {
   public static final String city3Name = "City3";
   public static final int cityDistance = 3;
 
+  City c1 = new City(city1Name);
+  City c2 = new City(city2Name);
+
+  @Test
+  void constructorTest()
+  {
+    Link l = new Link(c1,c2,cityDistance);
+    assertEquals(c1,l.city1,"city1 is not equal to l.city1");
+    assertEquals(c2,l.city2,"city2 is not equal to l.city2");
+    assertEquals(cityDistance,l.length,"citydistance is not equal to l.citydistance");
+
+  }
   /* getLength() returns the length length of a link */
   @Test
   void getLength() {
