@@ -32,15 +32,17 @@ class LinkTest {
   @Test
   void getAdj_city1() {
 
+    Link l = new Link(c1,c2,cityDistance);
+    assertEquals(c2,l.getAdj(c1),"Not found city");
   }
 
   /* getAdj() returns city2 if c is city1 */
   @Test
   void getAdj_city2() {
-
+    Link l = new Link(c1,c2,4);
+    assertEquals(c1,l.getAdj(c2),"Not found city");
 
   }
-
   /* isUsed() returns true if the link is on a shortest path */
   @Test
   void isUsed_true() {
