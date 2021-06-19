@@ -84,5 +84,33 @@ class LinkTest {
     assertTrue(link.used == false, "user was not set to false");
   }
 
+  @Test
+  void cityNameOrder_greater()
+  {
+    City city1 = new City("Halifax");
+    City city2 = new City("Toronto");
+    Link l = new Link(city1,city2,3);
 
+    assertEquals("Halifax 3 Toronto",l.cityNameSorted());
+  }
+
+  @Test
+  void cityNameOrder_smaller()
+  {
+    City city1 = new City("Montreal");
+    City city2 = new City("Halifax");
+    Link l = new Link(city1,city2,3);
+
+    assertEquals("Halifax 3 Montreal",l.cityNameSorted());
+  }
+
+  @Test
+  void cityNameOrder_equalsZero()
+  {
+    City city1 = new City("Halifax");
+    City city2 = new City("Halifax");
+    Link l = new Link(city1,city2,3);
+
+    assertEquals("Halifax 3 Halifax",l.cityNameSorted());
+  }
 }
