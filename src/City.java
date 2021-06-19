@@ -27,6 +27,10 @@ public class City {
     name = nm;
     cities.put(name, this);
   }
+  public City(int distance)
+  {
+    this.distance = distance;
+  }
 
   /* add a link to links
    */
