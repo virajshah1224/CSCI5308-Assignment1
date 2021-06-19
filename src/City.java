@@ -74,11 +74,11 @@ public class City {
         City child = l.getAdj(this);
         if ((dest == child) || child.getLinksTo(dest, routeLinks)) {
           routeLinks.add(l);
-          return false;
+          return true;
         }
       }
     }
-    return true;
+    return false;
   }
 
 }

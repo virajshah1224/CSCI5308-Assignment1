@@ -10,6 +10,11 @@ public class CityTest {
         assertEquals("Hello",c.name);
     }
 
-
+    @Test
+    public void constructorDistanceTest()
+    {
+        City c = new City(4);
+        assertEquals(4,c.distance);
+    }
 
 }
