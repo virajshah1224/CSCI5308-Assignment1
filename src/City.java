@@ -53,7 +53,7 @@ public class City {
    */
   public String toString() {
 
-    return name + distance;
+    return name;
   }
 
   /* compare cities by their distance from the start of the rail network
@@ -61,7 +61,7 @@ public class City {
    */
   public int compare(City c1, City c2) {
 
-    return c2.distance - c1.distance;
+    return c1.distance - c2.distance;
   }
 
   /* find a path from this to dest
