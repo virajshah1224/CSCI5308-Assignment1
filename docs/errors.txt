@@ -15,10 +15,32 @@ Error 1:
   Message: toString with sorted city names returned wrong string
 
 Error 2:
-  Class: 
-  Method:
-  Test Method:
-  Message:
+  Class: Link
+  Method: getAdv()
+  Test Method: getAdj_city1() , getAdj_city2()
+  Message: when it is city1 then it has to show city2 and vice-versa.
+
+Error 3:
+  Class: Link
+  Method: compareTo()
+  Test Method: compareToCityName_same() ,compareToCityName_smaller() ,compareToCityName_greater()
+  Message: this method of interface is not implemented while implements that interface.
+
+Error 4:
+  Class: City
+  Method: getLinksTo(City dest, Set<Link> routeLinks)
+  Test Method: testGetLinksTo_true(), testGetLinksTo_false_condition1(), testGetLinksTo_false_condition2(), testGetLinksTo_false_condition3()
+  Message: when all the conditions are right then it has to return true but it is returning false and vice-versa for
+  false condition. so, interchange both the return value.
+
+Error 5:
+  Class: City
+  Method: compare(City c1, City c2)
+  Test Method: testCompareGreater() , testCompareSmaller(), testCompareEqual()
+  Message: It has misplaced the value of distance c1 and c2. there would be c1.distance - c2.distance.
+
+
+
 
 
 *********** ADD AS MANY MORE AS NEEDED *******************
